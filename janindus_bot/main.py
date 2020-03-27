@@ -45,7 +45,7 @@ def sendTweet(tweet):
 
 	print(tweet)
 	print(len(tweet))
-	#api.update_status(status=tweet)
+	api.update_status(status=tweet)
 
 hpbData = getHpbData()
 
