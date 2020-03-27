@@ -4,10 +4,14 @@ import os
 import sys
 import json
 from twython import Twython
+import requests
 
 twitterAuthPath = os.getenv("HOME")+"/auth/twitter_auth.json"
+hpbEndpoint = "https://www.hpb.health.gov.lk/api/get-current-statistical"
 
-print(twitterAuthPath)
+hpbResponse = requests.get(url = hpbEndpoint)
+
+hpbData = hpbResponse.json()
 
 with open(twitterAuthPath) as twitterAuthFile:
 	twitterAuthData = json.load(twitterAuthFile)

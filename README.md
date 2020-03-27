@@ -1,2 +1,2 @@
 # twitter_bots
-Pet projcets
+Pet projects
