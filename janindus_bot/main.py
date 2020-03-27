@@ -24,7 +24,6 @@ def genHpbLocalTweet(hpbData):
 
 	return line1 + line2 + line3 + line4 + line5 + line6 + line7
 
-
 def genHpbGlobalTweet(hpbData):
 	line1 = '#COVID19 Global Update ' + str(hpbData['data']['update_date_time']) + '\n'
 	line2 = str(hpbData['data']['global_new_cases']) + ' new cases\n'
