@@ -21,7 +21,7 @@ def genHpbLocalTweet(hpbData):
 	line4 = str(hpbData['data']['local_total_number_of_individuals_in_hospitals']) + ' in hospital\n'
 	line5 = str(hpbData['data']['local_recovered']) + ' recovered\n'
 	line6 = str(hpbData['data']['local_deaths']) + ' deaths\n'
-	line7 = "Source : HPB API"
+	line7 = "Source : @HPBSriLanka API"
 
 	return line1 + line2 + line3 + line4 + line5 + line6 + line7
 
@@ -31,7 +31,7 @@ def genHpbGlobalTweet(hpbData):
 	line3 = str(hpbData['data']['global_total_cases']) + ' total cases\n'
 	line4 = str(hpbData['data']['global_recovered']) + ' recovered\n'
 	line5 = str(hpbData['data']['global_deaths']) + ' deaths\n'
-	line6 = "Source : HPB API"
+	line6 = "Source : @HPBSriLanka API"
 
 	return line1 + line2 + line3 + line4 + line5 + line6
 
