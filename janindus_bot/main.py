@@ -42,7 +42,9 @@ def genImage(tweet, fname):
 
 	img = Image.new('RGB', (W,H), color=(51,51,51))
 
-	fnt = ImageFont.truetype('/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf', fsize)
+	fontPath = os.getenv('HOME')+'/fonts/liberation_mono/'
+
+	fnt = ImageFont.truetype(fontPath+'liberation_mono_bold.ttf', fsize)
 
 	d = ImageDraw.Draw(img)
 
